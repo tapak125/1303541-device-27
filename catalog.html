@@ -10,11 +10,26 @@
         <img src="img/header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
       </a>
 
-      <!--Форма поиска type="search"-->
+      <form action="#" method="get">
+        <label for="search" class="visually-hidden"></label>
+        <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+      </form>
 
       <nav>
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <!--popup-->
+            <ul>
+              <li><a href="">Виртуальная реальность</a></li>
+              <li><a href="">Моноподы для селфи</a></li>
+              <li><a href="">Экшн-камеры</a></li>
+              <li><a href="">Фитнес-браслеты</a></li>
+              <li><a href="">Умные часы</a></li>
+              <li><a href="">Квадрокоптеры</a></li>
+            </ul>
+            <!--popup-->
+          </li>
           <li><a href="">Доставка</a></li>
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
@@ -35,7 +50,7 @@
       <h1>Моноподы для селфи</h1>
 
       <div>
-        <h2 class="visually-hidden">Хлебные крошки</h2>
+        <h2 class="visually-hidden">Навигационная цепочка</h2>
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог товаров</a></li>
@@ -45,25 +60,84 @@
 
       <section>
         <h2>Фильтр:</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Стоимость</legend>
 
-        <!--Форма шкалы <range>-->
-        <!--Форма-скелет с множественным выбором <select multiple>-->
-        <!--Форма переключатель <radio>-->
-        <!--Форма отправки <submit>-->
+            <span>0</span>
+            <input type="range" name="cost">
+            <span>5000</span>
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+
+            <ul>
+              <li>
+                <input type="checkbox" checked id="color_black" name="color-1">
+                <label for="color_black">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" id="color_white" name="color-2">
+                <label for="color_white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" checked id="color_blue" name="color-3">
+                <label for="color_blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" checked id="color_red" name="color-4">
+                <label for="color_red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" id="color_pink" name="color-5">
+                <label for="color_pink">Розовоый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bluetooth</legend>
+
+            <ul>
+              <li>
+                <input type="radio" id="bluetooth_on" name="bluetooth">
+                <label for="bluetooth_on">Есть</label>
+              </li>
+              <li>
+                <input type="radio" id="bluetooth_off" name="bluetooth">
+                <label for="bluetooth_off">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
         <h2>Сортировка:</h2>
 
-        <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По популярности</a></li>
-        </ul>
+        <form>
+          <ul>
+            <li>
+              <input type="radio" id="sort_by_cost" name="sort">
+              <label for="sort_by_cost">По цене</label>
+            </li>
+            <li>
+              <input type="radio" id="sort_by_type" name="sort">
+              <label for="sort_by_type">По типу</label>
+            </li>
+            <li>
+              <input type="radio" id="sort_by_popularity" name="sort">
+              <label for="sort_by_popularity">По популярности</label>
+            </li>
+          </ul>
 
-        <button type="button"></button>
+          <button type="button" aria-label="По возрастанию"></button>
 
-        <button type="button"></button>
+          <button type="button" aria-label="По убыванию"></button>
+        </form>
       </section>
 
       <section>
@@ -101,6 +175,7 @@
             </h3> 
           </li>
           <li>
+            <span>New</span>
             <img src="img/catalog-gallery_img-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <!--Сделать popup или незнакомый интерактивный элемент-->
             <h3>
@@ -111,8 +186,6 @@
             </h3> 
           </li>
         </ul>
-        
-        <p>New</p>
       </section>
 
       <div>
@@ -134,7 +207,17 @@
       <a href="index.html">
         <img src="img/footer-logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
       </a>
- 
+      
+      <div>
+        <a href="">Валентин Петухов</a>
+
+        <ul>
+          <li><a href="">Выйти</a></li>
+          <li><a href="">Сравнить</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+      </div>
+
       <p>г. Москва, ул. Строителей, 15</p>
 
       <div>
@@ -147,33 +230,23 @@
         </ul>
       </div>
 
+      <p>Тел.: +7 (495) 495-95-95</p>
+
       <div>
         <h2 class="visually-hidden">Социальные сети</h2>
 
         <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="" aria-label="Вконтакте"></a></li>
+          <li><a href="" aria-label="Фейсбук"></a></li>
+          <li><a href="" aria-label="Инстаграм"></a></li>
         </ul>
       </div>
-
-      <div>
-        <a href="">Валентин Петухов</a>
-
-        <ul>
-          <li><a href="">Выйти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
-        </ul>
-      </div>
-
-      <p>Тел.: +7 (495) 495-95-95</p>
 
       <section>
         <h2 class="visually-hidden">Разработчик</h2>
         
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html_academy.svg" width="2" height="1" alt="Логотип компании HTML Academy">
+          <img src="img/logo-html_academy.svg" width="27" height="35" alt="Логотип компании HTML Academy">
         </a>
       </section>
     </footer>

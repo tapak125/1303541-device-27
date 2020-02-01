@@ -12,11 +12,26 @@
         <img src="img/header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
       </a>
 
-      <!--Форма поиска type="search"-->
+      <form action="#" method="get">
+        <label for="search" class="visually-hidden"></label>
+        <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+      </form>
 
       <nav>
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <!--popup-->
+            <ul>
+              <li><a href="">Виртуальная реальность</a></li>
+              <li><a href="">Моноподы для селфи</a></li>
+              <li><a href="">Экшн-камеры</a></li>
+              <li><a href="">Фитнес-браслеты</a></li>
+              <li><a href="">Умные часы</a></li>
+              <li><a href="">Квадрокоптеры</a></li>
+            </ul>
+            <!--popup-->
+          </li>
           <li><a href="">Доставка</a></li>
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
@@ -35,6 +50,7 @@
     </header>
 
     <main>
+      <!--Сделать слайдером-->
       <section>
         <h2 class="visually-hidden">Промо-товары</h2>
 
@@ -42,12 +58,12 @@
           <h3 class="visually-hidden">Промо-слайдер-1</h3>
     
           <figure>
-            <img src="img/promo_slider-img-1.png" width="384" height="486" alt="Самая длинная палка для селфи доступная в магазине">
+            <img src="img/promo_slider-img-1.png" width="384" height="486" alt="Самая длинная палка для селфи доступная в магазине" >
           </figure>
 
-          <span>Делай селфи, как Бен Стиллер!</span>
+          <span >Делай селфи, как Бен Стиллер!</span>
 
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <p >Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
     
           <div>
             <a href="">Подробнее</a>
@@ -119,7 +135,8 @@
           </table>
         </article>
       </section>
-      
+      <!--Сделать слайдером-->
+
       <div>
         <h2 class="visually-hidden">Список разделов каталога товаров</h2>
 
@@ -167,7 +184,8 @@
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </article>
       </section>
-     
+      <!--Сделать слайдером-->
+
       <div>
         <h2 class="visually-hidden">Логотипы компаний партнёров</h2>
 
@@ -205,9 +223,9 @@
         </p>
 
         <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖилДорЭкспедиция</li>
+          <li >Деловые линии</li>
+          <li >Автотрейдинг</li>
+          <li >ЖилДорЭкспедиция</li>
         </ul>
 
         <a href="">Подробнее о нас</a>
@@ -219,12 +237,44 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
         <a href="">
-          <img src="img/map.jpg" width="560" height="222" alt="Карта, на которой показано расположение офиса компании улица Строителей, 15">
-          <!--Сделать popup-->
+          <img src="img/map.jpg" width="560" height="222" alt="Карта, на которой показано расположение офиса компании, улица Строителей, 15">
         </a>
-        <br>
+
+        <!--popup-->
+        <figure>
+          <img src="img/popup-map.png" width="960" height="559" alt="Увеличенная карта, на которой показано расположение офиса компании, улица Строителей, 15" >
+        </figure>
+        <!--popup-->
+
         <a href="">Напишите нам</a>
-        <!--Сделать popup.-->
+        <!--popup-->
+        <article>
+          <h3 class="visually-hidden">Форма для связи</h3>
+
+          <form action="#" method="post">
+            <ul>
+              <li>
+                <label for="user_name">Ваше имя:</label>
+                <br>
+                <input type="text" id="user_name" name="name" placeholder="Имя Фамилия">
+              </li>
+              <li>
+                <label for="user_email">Ваш e-mail:</label>
+                <br>
+                <input type="email" id="user_email" name="email" placeholder="email@example.com">
+              </li>
+              <li>
+                <label for="user_letter">Текст письма:</label>
+                <br>
+                <!--Выставить rows и cols посредством pixelperfect-->
+                <textarea id="user_letter" name="letter">В свободной форме</textarea>
+              </li>
+            </ul>
+            
+            <button type="submit">Отправить</button>
+          </form>
+        </article>
+        <!--popup-->
       </section>
     </main>
 
@@ -232,6 +282,14 @@
       <a>
         <img src="img/footer-logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
       </a>
+
+      <div>
+        <ul>
+          <li><a href="">Войти</a></li>
+          <li><a href="">Сравнить</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+      </div>
 
       <p>г. Москва, ул. Строителей, 15</p>
 
@@ -245,31 +303,23 @@
         </ul>
       </div>
 
+      <p>Тел.: +7 (495) 495-95-95</p>
+
       <div>
         <h2 class="visually-hidden">Социальные сети</h2>
 
         <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="" aria-label="Вконтакте"></a></li>
+          <li><a href="" aria-label="Фейсбук"></a></li>
+          <li><a href="" aria-label="Инстаграм"></a></li>
         </ul>
       </div>
-
-      <div>
-        <ul>
-          <li><a href="">Войти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
-        </ul>
-      </div>
-
-      <p>Тел.: +7 (495) 495-95-95</p>
 
       <section>
         <h2 class="visually-hidden">Разработчик</h2>
         
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html_academy.svg" width="2" height="1" alt="Логотип компании HTML Academy">
+          <img src="img/logo-html_academy.svg" width="27" height="35" alt="Логотип компании HTML Academy">
         </a>
       </section>
     </footer>
