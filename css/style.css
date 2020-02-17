@@ -75,73 +75,138 @@ a {
   background-image: url("../img/header-background.png");
 }
 
-.search input {
+.search-field {
   background-color: transparent;
   border: none;
+
+  width: 441px;
+  height: 49px;
 }
 
-.search input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
+.search-title {
+  border: solid 2px #000000;
 
-.search input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.search input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.search input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.search input:hover:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.search input:hover::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.search input:hover::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.search input:hover::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.search input:focus:-ms-input-placeholder {
-  color: #000000;
-}
-
-.search input:focus::-ms-input-placeholder {
-  color: #000000;
-}
-
-.search input:focus ::-moz-placeholder{
-  color: #000000;
-}
-
-.search input:focus::-webkit-input-placeholder {
-  color: #000000;
-}
-
-/*
-.search input::after {
-  content: "Найти";
-  text-align: center;
-  
   width: 85px;
   height: 49px;
 
-  display: block;
-  position: absolute;
+  display: none;
+}
+
+.search-title a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+
+  padding-left: 21px;
+  padding-top: 19px;
+}
+
+.search-title:hover {
+  background-color: #000000;
+}
+
+.search-title:hover a {
+  color: #ffffff;
+}
+
+.search-title:active {
+  display: inline-block;
+}
+
+.search-title:active a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-field:focus + .search-title {
+  display: inline-block;
+}
+
+/* Альтернатива "Найти" для поиска, не имеющая соответсвующей интерактивности(как у ссылки), которую потенциальном можно сделать через JS */
+/*
+.search-title::before {
+  content: "Найти";
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+
+  width: 85px;
+  height: 49px;
 
   border: solid 2px #000000;
+  display: none;
+}
+
+.search-title:hover::before {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.search-title:active::before {
+  color: rgba(255, 255, 255, 0.3);
+
+  display: block;
+}
+
+.search-field:focus + .search-title::before {
+  display: block;
 }
 */
+
+.search-field:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:hover::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:hover::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:focus:-ms-input-placeholder {
+  color: #000000;
+}
+
+.search-field:focus::-ms-input-placeholder {
+  color: #000000;
+}
+
+.search-field:focus ::-moz-placeholder{
+  color: #000000;
+}
+
+.search-field:focus::-webkit-input-placeholder {
+  color: #000000;
+}
 
 .header-navigation__list a {
   font-family: "Gilroy", "Arial Black", sans-serif;
