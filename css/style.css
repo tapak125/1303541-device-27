@@ -2,7 +2,7 @@
 
 /* Gilroy ExtraBold */
 @font-face {
-  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-family: "Gilroy";
   src: 
     url("../fonts/gilroyextrabold.woff") format("woff"),
     url("../fonts/gilroyextrabold.woff2") format("woff2");
@@ -13,7 +13,7 @@
 
 /* Gilroy Light */
 @font-face {
-  font-family: "Gilroy", "Arial Narrow", sans-serif;
+  font-family: "Gilroy";
   src: 
     url("../fonts/gilroylight.woff") format("woff"),
     url("../fonts/gilroylight.woff2") format("woff2");
@@ -151,7 +151,6 @@ a {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
-  text-align: left;
   text-transform: uppercase;
   color: #000000;
 }
@@ -172,7 +171,6 @@ a {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.15px;
-  text-align: left;
   color: #000000; 
 }
 
@@ -192,7 +190,6 @@ a {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.15px;
-  text-align: left;
   color: #000000;
 }
 
@@ -217,7 +214,6 @@ a {
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.15px;
-  text-align: left;
   color: rgba(255, 255, 255, 0.7); 
 }
 
@@ -241,7 +237,6 @@ a {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.15px;
-  text-align: left;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -253,7 +248,6 @@ a {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
-  text-align: left;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -336,7 +330,6 @@ a {
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.47px;
-  text-align: left;
   color: #000000;
 }
 
@@ -398,7 +391,6 @@ a {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
-  text-align: left;
   color: #000000;
 }
 
@@ -652,7 +644,6 @@ a {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.14px;
-  text-align: left;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -742,7 +733,6 @@ a {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
-  text-align: left;
   color: #000000;
 }
 
@@ -802,7 +792,6 @@ a {
   font-display: swap;
   font-size: 14px;
   line-height: 18px;
-  text-align: left;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -822,7 +811,6 @@ a {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
-  text-align: left;
   color: #000000;
 }
 
@@ -971,7 +959,6 @@ a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.2px;
-  text-align: left;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -996,7 +983,6 @@ a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.2px;
-  text-align: left;
   text-transform: uppercase;
   color: #000000;
 }
